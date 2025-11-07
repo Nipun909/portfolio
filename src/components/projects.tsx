@@ -19,8 +19,7 @@ const projects: Project[] = [
       "The Agricultural Information Platform with Crop Calendar helps farmers and stakeholders by offering a crop calendar, tips, and insights to improve agricultural productivity.",
     image: "/projects/crop/crop.png",
     tech: ["React.js", "Laravel", "MySQL"],
-    screens: ["/projects/crop/login1.png", 
-      ],
+    screens: [],
   },
   {
     id: 2,
