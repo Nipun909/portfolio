@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Personal portfolio of Nipun Thilakshana — Full-Stack Developer & Designer",
   icons: {
-    icon: `${basePath}/logo.png`, // ✅ ensures correct logo path on GitHub Pages
+    icon: '/logo.png', // ✅ ensures correct logo path on GitHub Pages
   },
 };
 
