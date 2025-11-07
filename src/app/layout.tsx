@@ -12,19 +12,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Detect if running in production (GitHub Pages)
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/portfolio" : "";
+
 export const metadata: Metadata = {
   title: "N i P u N",
-  description: "Personal portfolio of Nipun Thilakshana — Full-Stack Developer & Designer",
+  description:
+    "Personal portfolio of Nipun Thilakshana — Full-Stack Developer & Designer",
   icons: {
-    icon: "/logo.png", // or "/favicon.ico"
+    icon: `${basePath}/logo.png`, // ✅ ensures correct logo path on GitHub Pages
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
