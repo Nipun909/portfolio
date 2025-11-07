@@ -20,7 +20,7 @@ const projects: Project[] = [
     image: "/projects/crop/crop.png",
     tech: ["React.js", "Laravel", "MySQL"],
     screens: ["/projects/crop/login1.png", 
-      "/projects/crop/login2.png"],
+      ],
   },
   {
     id: 2,
