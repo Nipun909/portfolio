@@ -9,6 +9,7 @@ type Project = {
   image: string;
   tech: string[];
   screens?: string[];
+  url?: string;
 };
 
 const projects: Project[] = [
@@ -19,36 +20,46 @@ const projects: Project[] = [
       "The Agricultural Information Platform with Crop Calendar helps farmers and stakeholders by offering a crop calendar, tips, and insights to improve agricultural productivity.",
     image: "/projects/crop/crop.png",
     tech: ["React.js", "Laravel", "MySQL"],
-    screens: [],
+    screens: ["/projects/crop/reg.png","/projects/crop/login.png","/projects/crop/service.png",
+      "/projects/crop/feed.png","/projects/crop/forum.png","/projects/crop/about.png",
+    ],
+    url:"https://github.com/Nipun909/Agricultural-Information-Platform-with-Crop-Calendar",
   },
   {
     id: 2,
     title: "U-News App",
     description:
-      "A modern news app built with Flutter and Firebase, delivering real-time updates and personalized user experiences.",
-    image: "/projects/unews/unews2.png",
-    tech: ["Flutter", "Firebase", "Figma"],
+      "University assignment app built with Android (Java) and Firebase, designed to deliver real-time updates and the latest university news across Sri Lankan universities.",
+    image: "/projects/unews/unews2.png ",
+    tech: ["java","xml", "Firebase", "Figma"],
     screens: ["/projects/unews/scrn1.png", "/projects/unews/scrn2.png",
       "/projects/unews/scrn3.png", "/projects/unews/scrn4.png", "/projects/unews/scrn5.png",
     ],
+    url:"https://github.com/Nipun909/Sl_University_News",
   },
   {
     id: 3,
     title: "Eco-Tourism-QR-Explorer",
+    
     description:
-      "A Flutter-based app designed to help users track fitness, manage nutrition, and monitor health goals with real-time data synchronization.",
+      "A group project eco-tourism website that allows tourists to discover various destinations via QR code scanning. My contribution focused on implementing dynamic cards to showcase place details interactively.",
     image: "/projects/ecoqr/ecoo.png",
-    tech: ["Flutter", "Firebase", "Figma"],
-    screens: ["/projects/healthmate_1.png", "/projects/healthmate_2.png"],
+    tech: ["Nextjs", "Firebase",],
+    screens: ["/projects/ecoqr/ecco.png", "/projects/ecoqr/eco5.png","/projects/ecoqr/eco4.png","/projects/ecoqr/eko.png",
+
+    ],
+    url:"https://eco-tourism-qr-explorer.vercel.app/explore",
+    
   },
   {
     id: 4,
     title: "My portfolio website",
     description:
-      "This is my portfolio website. its made with Next js",
+      "A personal portfolio website built with Next.js to showcase my projects, skills, and achievements in web and software development.",
     image: "/projects/portfolio/portfolio.png",
     tech: ["Next js", "Tailwind"],
     screens: ["/projects/portfolio/port1.png", "/projects/portfolio/port2.png","/projects/portfolio/port3.png"],
+    url:"https://github.com/Nipun909/portfolio",
   },
 ];
 
@@ -126,6 +137,18 @@ export default function ProjectsSection() {
             <p className="text-gray-300 mb-6 text-lg leading-relaxed">
               {activeProject.description}
             </p>
+
+          {/* ✅ Visit Project Button */}
+            {activeProject.url && (
+              <a
+                href={activeProject.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mb-6 px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium rounded-lg shadow-md hover:opacity-90 transition"
+              >
+                Visit Project
+              </a>
+            )}
 
             {/* ✅ Technologies */}
             <h4 className="text-blue-400 font-semibold mb-2 text-lg">

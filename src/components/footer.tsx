@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex justify-center space-x-6">
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Nipun909/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
@@ -21,7 +21,7 @@ export default function Footer() {
 
           {/* Gmail */}
           <a
-            href="mailto:yourname@gmail.com"
+            href="mailto:thilakshana956@gmail.com"
             className="p-2 bg-white rounded-full hover:bg-gray-400 transition"
           >
             <SiGmail size={20} className="text-red-600" />
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/nipun-thilakshana-65bbb1313"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-blue-600 rounded-full hover:bg-blue-500 transition"
