@@ -20,10 +20,15 @@ const projects: Project[] = [
       "The Agricultural Information Platform with Crop Calendar helps farmers and stakeholders by offering a crop calendar, tips, and insights to improve agricultural productivity.",
     image: "/projects/crop/crop.png",
     tech: ["React.js", "Laravel", "MySQL"],
-    screens: ["/projects/crop/reg.png","/projects/crop/login.png","/projects/crop/service.png",
-      "/projects/crop/feed.png","/projects/crop/forum.png","/projects/crop/about.png",
+    screens: [
+      "/projects/crop/reg.png",
+      "/projects/crop/login.png",
+      "/projects/crop/service.png",
+      "/projects/crop/feed.png",
+      "/projects/crop/forum.png",
+      "/projects/crop/about.png",
     ],
-    url:"https://github.com/Nipun909/Agricultural-Information-Platform-with-Crop-Calendar",
+    url: "https://github.com/Nipun909/Agricultural-Information-Platform-with-Crop-Calendar",
   },
   {
     id: 2,
@@ -31,25 +36,31 @@ const projects: Project[] = [
     description:
       "University assignment app built with Android (Java) and Firebase, designed to deliver real-time updates and the latest university news across Sri Lankan universities.",
     image: "/projects/unews/unews2.png ",
-    tech: ["java","xml", "Firebase", "Figma"],
-    screens: ["/projects/unews/scrn1.png", "/projects/unews/scrn2.png",
-      "/projects/unews/scrn3.png", "/projects/unews/scrn4.png", "/projects/unews/scrn5.png",
+    tech: ["java", "xml", "Firebase", "Figma"],
+    screens: [
+      "/projects/unews/scrn1.png",
+      "/projects/unews/scrn2.png",
+      "/projects/unews/scrn3.png",
+      "/projects/unews/scrn4.png",
+      "/projects/unews/scrn5.png",
     ],
-    url:"https://github.com/Nipun909/Sl_University_News",
+    url: "https://github.com/Nipun909/Sl_University_News",
   },
   {
     id: 3,
     title: "Eco-Tourism-QR-Explorer",
-    
+
     description:
       "A group project eco-tourism website that allows tourists to discover various destinations via QR code scanning. My contribution focused on implementing dynamic cards to showcase place details interactively.",
     image: "/projects/ecoqr/ecoo.png",
-    tech: ["Nextjs", "Firebase",],
-    screens: ["/projects/ecoqr/ecco.png", "/projects/ecoqr/eco5.png","/projects/ecoqr/eco4.png","/projects/ecoqr/eko.png",
-
+    tech: ["Nextjs", "Firebase"],
+    screens: [
+      "/projects/ecoqr/ecco.png",
+      "/projects/ecoqr/eco5.png",
+      "/projects/ecoqr/eco4.png",
+      "/projects/ecoqr/eko.png",
     ],
-    url:"https://eco-tourism-qr-explorer.vercel.app/explore",
-    
+    url: "https://eco-tourism-qr-explorer.vercel.app/explore",
   },
   {
     id: 4,
@@ -58,8 +69,21 @@ const projects: Project[] = [
       "A personal portfolio website built with Next.js to showcase my projects, skills, and achievements in web and software development.",
     image: "/projects/portfolio/portfolio.png",
     tech: ["Next js", "Tailwind"],
-    screens: ["/projects/portfolio/port1.png", "/projects/portfolio/port2.png","/projects/portfolio/port3.png"],
-    url:"https://github.com/Nipun909/portfolio",
+    screens: [
+      "/projects/portfolio/port1.png",
+      "/projects/portfolio/port2.png",
+      "/projects/portfolio/port3.png",
+    ],
+    url: "https://github.com/Nipun909/portfolio",
+  },
+  {
+    id: 5,
+    title: "Simple Todo App",
+    description: "A simple todo App made with flutter to practice and learn.",
+    image: "/projects/todo/todo1.png",
+    tech: ["Next js", "Tailwind"],
+    screens: ["/projects/todo/todo2.png", "/projects/todo/todo3.png"],
+    url: "https://github.com/Nipun909/Task_Manager_Flutter",
   },
 ];
 
@@ -138,7 +162,7 @@ export default function ProjectsSection() {
               {activeProject.description}
             </p>
 
-          {/* ✅ Visit Project Button */}
+            {/* ✅ Visit Project Button */}
             {activeProject.url && (
               <a
                 href={activeProject.url}

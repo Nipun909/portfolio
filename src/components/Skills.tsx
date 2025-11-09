@@ -53,7 +53,7 @@ export default function Skills() {
             MY
           </h2>
           <h2 className="text-6xl sm:text-7xl font-extrabold leading-tight bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-            SKILLS
+            STACK
           </h2>
         </div>
 
