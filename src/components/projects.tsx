@@ -81,7 +81,7 @@ const projects: Project[] = [
     title: "Simple Todo App",
     description: "A simple todo App made with flutter to practice and learn.",
     image: "/projects/todo/todo1.png",
-    tech: ["Next js", "Tailwind"],
+    tech: ["Flutter", "Figma"],
     screens: ["/projects/todo/todo2.jpg", "/projects/todo/todo3.jpg"],
     url: "https://github.com/Nipun909/Task_Manager_Flutter",
   },

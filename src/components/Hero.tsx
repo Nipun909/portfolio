@@ -11,7 +11,7 @@ import Spline from "@splinetool/react-spline";
 import AboutMeSection from "@/components/Aboutme";
 import Projects from "@/components/projects";
 import Footer from "@/components/footer";
-
+import Navbar from "@/components/Navbar";
 
 
 const Hero = () => {
@@ -36,28 +36,7 @@ const Hero = () => {
         </div>
 
         {/* ✅ Navbar */}
-        <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-20 w-[90%] sm:w-auto">
-          <ul
-            className="flex justify-center gap-4 sm:space-x-8 text-sm sm:text-base text-white font-semibold px-4 sm:px-8 py-2 
-              bg-gradient-to-r from-black via-[#0a0f2d] backdrop-blur-md border border-white/10 shadow-lg rounded-full overflow-x-auto no-scrollbar whitespace-nowrap"
-          >
-            {[
-              { name: "Home", id: "home" },
-              { name: "About Me", id: "about" },
-              { name: "Projects", id: "projects" },
-              { name: "Contact Me", id: "contact" },
-            ].map((item) => (
-              <li
-                key={item.name}
-                onClick={() => handleScroll(item.id)}
-                className="relative group cursor-pointer transition-all duration-300"
-              >
-                {item.name}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Navbar />
 
         {/* ✅ Hero Content */}
         <div className="flex items-center justify-start min-h-screen px-8 sm:px-16 lg:px-28 pt-24 md:pt-32">
